@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css header</title>
+    <script src="https://kit.fontawesome.com/ac6ee84b93.js" crossorigin="anonymous"></script>
+    <style>
+      .top{
+         display:flex; 
+        justify-content: space-between;
+      }
+      .navbar1,.navbar2{
+        display: flex;
+        gap:20px;
+      }
+      .a,.b,.c,.d{
+        padding:15px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+      }
+      .text{
+         border-radius: 20px;
+         width:180px;
+         height:30px;
+         position:absolute;
+         left:650px;
+         top:15px;
+      }
+      .search{
+         position: absolute;
+         left:810px;
+         top:25px;
+      }
+      .circle{
+        position: absolute;
+        left:880px;
+        top:10px;
+        font-size: larger;
+        border:0px solid;
+        padding:15px;
+        border-radius: 50px;
+      }
+      .circle:hover{
+        background-color:gray;
+      }
+     .navbar2{
+        text-decoration: none;
+     }
+     .plus,.spaces,.certified{
+      padding:15px;
+      border: 0px solid;
+      border-radius: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+     }
+     .signup,.login{
+      padding:15px;
+      border: 0px solid;
+      border-radius: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+     }
+     .a:hover,.b:hover,.c:hover,.d:hover{
+      background-color: rgb(7, 157, 7);
+     }
+     .plus:hover,.spaces:hover, .certified:hover{
+background-color: rgb(161, 176, 176);
+color: white;
+     }
+     .signup,.login{
+      background-color: rgb(7, 113, 7);
+  
+     }
+     .signup:hover{
+background-color: rgb(3, 84, 3);
+color: white;
+     }
+     .login:hover{
+      background-color: beige;
+     }
+     /* li{
+    display: flex;
+    color: white;
+     }  */
+     ul   {
+      display:flex;
+      padding:0px; 
+      overflow-x:auto;
+      flex-direction: row;
+      justify-content:space-around;
+      background-color: black;
+      color: white;
+      width: 100%;
+      font-size: larger;
+      scrollbar-width: none;
+      cursor: pointer;
+      gap:30px;
+     }
+     ul>li{
+      padding:10px
+     }
+     ul>li:hover{
+      background-color: rgb(162, 159, 159);
+      color:blue
+     }
+     .left{
+      position:fixed;
+      top:92px;
+      left:10px;
+     }
+    .right{
+      position:fixed;
+      top:92px;
+      right:10px;
+    }
+    </style>
+</head>
+<body>
+    <div  class="top">
+        <div class="navbar1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJPZAINpYal7ohM_CfFR8yWuQfYpCdP1sCYg&s" width="50px" alt="">
+            <a class="a" href="javascript:void(0)">Tutorials<i class="fa-solid fa-caret-down"></i></a>
+            <a class="b" href="javascript:void(0)">Exercises <i class="fa-solid fa-caret-down"></i></a>
+            <a class="c" href="javascript:void(0)">Certifictions <i class="fa-solid fa-caret-down"></i></a>
+            <a class="d" href="javascript:void(0)">Services <i class="fa-solid fa-caret-down"></i></a>
+            <input type="text" placeholder="&emsp;Search..." class="text">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <i class="fa-solid fa-circle-half-stroke circle"></i>
+        </div>
+        <div class="navbar2">
+            <a class="plus" href="#"> <i class="fa-solid fa-wand-magic-sparkles"></i>Plus</a>
+            <a class="spaces" href="#"> <i class="fa-solid fa-code code"> </i> Spaces</a>
+            <a  class="certified" href="#"> <i class="fa-solid fa-cart-plus"></i> Get Certified</a>
+            <a class="signup" href="#">SignUp</a>
+            <a class="login" href="#">Login</a>
+        </div>
+    </div>
+    <div class="navbar2">
+       <ul type="none">
+        <i class="fa-solid fa-chevron-left left"></i>&nbsp; <li> &nbsp;HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>SQL</li>
+        <li>PYTHON</li>
+        <li>JAVA</li>
+        <li>PHP</li>
+        <li>HOWTO</li>
+        <li>W3.CSS</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>BOOTSTRAP</li>
+        <li>REACT</li>
+        <li>MYSQL</li>
+        <li>JQUERY</li>
+        <li>EXCEL</li>
+        <li>XML</li>
+        <li>DJANGO</li>
+        <li>NUMPY</li>
+        <li>PANDAS</li>
+        <li>NODEJS</li>
+        <li>R</li>
+        <li>TYPESCRIPT</li>
+        <li>ANGULAR</li>
+        <li>GIT</li>&nbsp; <i class="fa-solid fa-chevron-right right"></i>
+       </ul>
+      </div>   
+</body>
+</html>
